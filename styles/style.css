@@ -194,6 +194,7 @@
 .proof-link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
+  border-radius: 0;
 }
 
 .proof-link:hover {
@@ -201,7 +202,10 @@
 }
 
 .proof-link:focus {
-  border-radius: 0;
+  outline: none;
+}
+
+.proof-link:focus-visible {
   outline:1px solid currentColor;
   outline-offset: 0 3px 0 4px;
 }
