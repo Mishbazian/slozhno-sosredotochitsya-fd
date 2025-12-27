@@ -4,3 +4,6 @@ package.json
 package-lock.json
 .prettierrc
 stylelint.config.js
+
+/*файлы ide*/
+.vscode
