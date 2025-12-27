@@ -10,11 +10,19 @@
   --neon-piggy-pink: #F1B2CE;
 
   /*Цвета основной темы*/
-  --page-bg-color: var(--neon-black, #000028);
+  --theme-color: #000028;
+
+  --page-bg-color: var(--theme-color, #000028);
   --page-title-color: var(--neon-violet, #D800FF);
+  
   --heading-color: var(--neon-black, #000028);
   --accent-color: var(--neon-pink, #FF0070);
   --text-color: var(--neon-piggy-pink,#F1B2CE);
+
+  --section-title-color: var(--accent-color);
+  
+ /*Фоны*/
+  --page-bg-image: url(../images/cover-image-dark.png);
 
   /*Заголовок 1*/
   --h1-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -24,8 +32,6 @@
   --text-font-size: 1.125rem;
   --text-line-height: 1.3;
 
- /*Фоны*/
-  --page-bg-image: url(../images/cover-image-dark.png);
 
   /*Отступы*/
   --spacing-sm: 0.625rem; /*10px*/
@@ -35,6 +41,9 @@
 
   --content-gap: var(--spacing-lg);
   --inner-spacing: var(--spacing-sm);
+  --h2-margin-bottom: var(--spacing-md);
+  --h3-margin-bottom: var(--spacing-sm);
+  --h4-margin-bottom: var(--spacing-sm);
 }
 
 @media (width >= 768px) {
