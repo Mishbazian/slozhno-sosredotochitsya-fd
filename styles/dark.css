@@ -5,17 +5,16 @@
 */
 
 :root.theme-dark {
-
   /*Цвета темной темы*/
-  --accent-color: #FF0070;
-  --decorative-color: #D800FF;
-  --text-color: #F1B2CE;
+  --accent-color: #ff0070;
+  --decorative-color: #d800ff;
+  --text-color: #f1b2ce;
   --page-bg-color: var(#000028);
   --accented-heading-color: var(#000028);
   --heading-color: var(--accent-color);
   --btn-color: var(--accent-color);
-  
- /*Фоны*/
+
+  /*Фоны*/
   --page-bg-image: url(../images/cover-image-dark.png);
 
   /*видимость декоративного элемента*/

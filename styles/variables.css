@@ -2,22 +2,22 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
 :root {
   /*Цвета основной темы*/
-  --accent-color: #FF0070;
-  --logo-color: #D800FF;
-  --text-color: #F1B2CE;
+  --accent-color: #ff0070;
+  --logo-color: #d800ff;
+  --text-color: #f1b2ce;
   --page-bg-color: var(#000028);
   --accented-heading-color: var(#000028);
   --heading-color: var(--accent-color);
   --btn-color: var(--accent-color);
-  
- /*Фоны*/
+
+  /*Фоны*/
   --page-bg-image: url(../images/cover-image-dark.png);
 
   /*видимость декоративного элемента*/
   --decor-item-visibility: visible;
-
 
   /*Заголовок 1*/
   --h1-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -27,24 +27,26 @@
   --text-font-size: 1.125rem;
   --text-line-height: 1.3;
 
-
   /*Отступы*/
   --spacing-sm: 0.625rem; /*10px*/
   --spacing-md: 1.25rem; /*20px*/
   --spacing-lg: 1.875rem; /*30px*/
   --spacing-xl: 2.5rem; /*40px*/
 
+
   --content-gap: var(--spacing-lg);
   --inner-spacing: var(--spacing-sm);
-  --h2-margin-bottom: var(--spacing-md);
-  --h3-margin-bottom: var(--spacing-sm);
-  --h4-margin-bottom: var(--spacing-sm);
+  --card-gap: var(--spacing-sm);
+  --article-gap: var(--spacing-md);
+  --heading-margin-bottom: var(--spacing-md);
+
 }
 
 @media (width >= 768px) {
+
   :root {
-  --content-gap: var(--spacing-xl);
-  --inner-spacing: var(--spacing-md);
-  --h1-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --content-gap: var(--spacing-xl);
+    --inner-spacing: var(--spacing-md);
+    --h1-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

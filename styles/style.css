@@ -12,17 +12,17 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
 }
 
 .logo {
   font-size: var(--h1-font-size, 116px);
   line-height: var(--h1-line-height, 82.5%);
-  color: var(--decorative-color, #D800FF);
+  color: var(--decorative-color, #d800ff);
 }
 
 /*Основные классы*/
 /*Хедер*/
+
 .header {
   display: grid;
   grid-template-columns: 1fr;
@@ -30,7 +30,7 @@
 }
 
 .header__logo {
-  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
 .header__lead {
@@ -42,10 +42,11 @@
 }
 
 /*Переключатель темы*/
+
 .header__theme-menu {
   align-self: center;
   justify-self: end;
-  color: var(--btn-color, #FF0070);
+  color: var(--btn-color, #ff0070);
 }
 
 .header__theme-menu-list {
@@ -64,7 +65,7 @@
   text-transform: lowercase;
 }
 
-.header__theme-menu-button:hover {  
+.header__theme-menu-button:hover {
   border-color: color(from currentColor display-p3 r g b/0.4);
 }
 
@@ -82,25 +83,27 @@
 }
 
 /*Секция страницы*/
+
 .article,
 .article__list,
 .chapter__list {
   display: grid;
-  gap: var(--spacing-md, 20px);
+  gap: var(--article-gap, 20px);
 }
 
 .article__title {
-  color: var(--heading-color, #FF0070);
+  color: var(--heading-color, #ff0070);
 }
 
 .chapter__title {
-  margin-block-end: var(--spacing-md, 20px);
+  margin-block-end: var(--heading-margin-bottom, 20px);
 }
 
 /*Карточка статьи*/
+
 .card {
   display: grid;
-  gap: var(--spacing-sm, 10px);
+  gap: var(--card-gap, 10px);
 }
 
 .card__title_regular {
@@ -108,6 +111,7 @@
 }
 
 /* Галлерея с иллюстрациями}*/
+
 .gallery {
   display: grid;
   gap: var(--inner-spacing, 10px);
@@ -120,16 +124,18 @@
 }
 
 /*Футер*/
+
 .footer {
   display: grid;
   place-items: center;
 }
 
 .footer__logo {
-  text-shadow: 2px 2px 0px var(--accent-color, #FF0070);
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
 /*Оформление Хедера и футера*/
+
 .decorated-zone {
   position: relative;
   block-size: max(100dvb, 668px);
@@ -141,10 +147,10 @@
   block-size: 25px;
   inline-size: 25px;
   position: absolute;
-  inset-inline-end: var(--inner-spacing);
-  inset-block-start: var(--inner-spacing);
-  border-block-start: 1px solid var(--accent-color, #FF0070);
-  border-inline-end: 1px solid var(--accent-color, #FF0070);
+  inset-inline-end: var(--inner-spacing, 10px);
+  inset-block-start: var(--inner-spacing, 10px);
+  border-block-start: 1px solid var(--accent-color, #ff0070);
+  border-inline-end: 1px solid var(--accent-color, #ff0070);
 }
 
 .decorated-zone::after {
@@ -152,14 +158,15 @@
   display: block;
   block-size: 25px;
   inline-size: 25px;
-  position:absolute;
-  inset-block-end: var(--inner-spacing);
-  inset-inline-start: var(--inner-spacing);
-  border-block-end: 1px solid var(--accent-color, #FF0070);
-  border-inline-start: 1px solid var(--accent-color, #FF0070);
+  position: absolute;
+  inset-block-end: var(--inner-spacing, 10px);
+  inset-inline-start: var(--inner-spacing, 10px);
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+  border-inline-start: 1px solid var(--accent-color, #ff0070);
 }
 
 /*Лампоча*/
+
 .decorated-zone__icon {
   display: flex;
   align-items: center;
@@ -167,8 +174,8 @@
   text-transform: uppercase;
   line-height: 139%;
   position: absolute;
-  inset-block-start: var(--inner-spacing);
-  inset-inline-end: calc(var(--inner-spacing) + 0.5em);
+  inset-block-start: var(--inner-spacing, 10px);
+  inset-inline-end: calc(var(--inner-spacing, 10px) + 0.5em);
   color: var(--accent-color);
   visibility: var(--decor-item-visibility, visible);
 }
@@ -179,15 +186,15 @@
   inline-size: 0.5em;
   block-size: 0.5em;
   border-radius: 50%;
-  background-color: var(--accent-color, #FF0070);
-  box-shadow: 0px 0px 4px 2px var(--accent-color, #FF0070);
+  background-color: var(--accent-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
 }
 
-
 /*Ссылка в тексте*/
+
 .proof-link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
   border-radius: 0;
 }
 
@@ -200,36 +207,38 @@
 }
 
 .proof-link:focus-visible {
-  outline:1px solid currentColor;
+  outline: 1px solid currentColor;
   outline-offset: 0 3px 0 4px;
 }
 
 /*миксы*/
 /*Декорирование лида и заголовков*/
+
 .title-decor {
-  background-color: var(--accent-color, #FF0070);
+  background-color: var(--accent-color, #ff0070);
   color: var(--accented-heading-color, #000028);
 }
 
 /*Общие внутрение отступы. изменение переменных от размера экрана*/
+
 .inner-spacing {
   padding-block: var(--inner-spacing, 10px);
   padding-inline: var(--inner-spacing, 10px);
 }
 
-  /*Класс для задания единых внешних отступов*/
-.outer-spacing {
-  margin-block-end: var(--content-gap);
-}
+/*Класс для задания единых внешних отступов*/
 
+.outer-spacing {
+  margin-block-end: var(--content-gap, 30px);
+}
 
 @media (width >= 768px) {
   /*Планшет*/
- 
-  .header__title {
-     /*сдвигаем заголовок к краю экрана*/     
+
+  .header__logo {
+    /*сдвигаем заголовок к краю экрана*/
     position: relative;
-    inset-inline-end: var(--inner-spacing);
+    inset-inline-end: var(--inner-spacing, 10px);
   }
 
   .article {
@@ -237,6 +246,7 @@
   }
 
   /*повышаем специфичность селектора, чтобы не переопределился*/
+
   .stoppers .article__list {
     grid-row-start: 2;
     grid-column: 1/-1;
@@ -245,27 +255,27 @@
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
- 
+
   .gallery__image_sunset {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
   }
 
   .gallery__image_ice-cream {
     grid-column: 3;
-    grid-row: 2/span 2;
+    grid-row: 2 / span 2;
     height: 100%;
   }
 
   .gallery__image_tape {
-    grid-row: 3/span 2;
+    grid-row: 3 / span 2;
     height: 100%;
   }
 
   .gallery__image_street {
-    grid-column: 2/span 2;
+    grid-column: 2 / span 2;
     width: 100;
   }
-  
+
   .gallery__title {
     grid-column: 1/-1;
   }
@@ -273,10 +283,11 @@
 
 @media (width >= 1024px) {
 
-   .header__theme-menu {
+  .header__theme-menu {
     justify-self: center;
     align-self: start;
   }
+
   .header__theme-menu-list {
     flex-direction: row;
   }
@@ -289,7 +300,7 @@
     grid-column: 2/-1;
   }
 
-  .article__list_expanded {
+  .stoppers .article__list {
     grid-template-columns: repeat(3, 1fr);
   }
 
