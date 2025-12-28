@@ -23,7 +23,7 @@
 
 @media (prefers-color-scheme: light) {
 
-  :root.theme-auto {
+  :root {
     --page-bg-color: #fff1f7;
     --accent-color: #ff8dcb;
     --decorative-color: #ffc2e6;
