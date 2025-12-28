@@ -10,6 +10,7 @@
   --page-bg-color: var(#000028);
   --accented-heading-color: var(#000028);
   --heading-color: var(--accent-color);
+  --btn-color: var(--accent-color);
   
  /*Фоны*/
   --page-bg-image: url(../images/cover-image-dark.png);

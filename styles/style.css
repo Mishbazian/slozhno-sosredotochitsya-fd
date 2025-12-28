@@ -22,7 +22,6 @@
 }
 
 /*Основные классы*/
-
 /*Хедер*/
 .header {
   display: grid;
@@ -47,7 +46,7 @@
 .header__theme-menu {
   align-self: center;
   justify-self: end;
-  color: var(--accent-color, #FF0070);
+  color: var(--btn-color, #FF0070);
 }
 
 .header__theme-menu-list {
@@ -64,9 +63,8 @@
   text-transform: lowercase;
 }
 
-.header__theme-menu-button:not(.header__theme-menu-button_active):hover {
-  border-color: var(--accent-color, #FF0070);
-  border-color: color(from var(--accent-color, #FF0070) display-p3 r g b/0.4);
+.header__theme-menu-button:hover {  
+  border-color: color(from currentColor display-p3 r g b/0.4);
 }
 
 .header__theme-menu-button:focus {
