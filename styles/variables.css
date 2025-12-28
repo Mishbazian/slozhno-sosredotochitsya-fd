@@ -3,26 +3,20 @@
   и их переопределение под различные устройства
 */
 :root {
-  /*Базовые цвета*/
-  --neon-violet: #DB00FF;
-  --neon-black: #000028;
-  --neon-pink: #FF0070;
-  --neon-piggy-pink: #F1B2CE;
-
   /*Цвета основной темы*/
-  --theme-color: #000028;
-
-  --page-bg-color: var(--theme-color, #000028);
-  --page-title-color: var(--neon-violet, #D800FF);
-  
-  --heading-color: var(--neon-black, #000028);
-  --accent-color: var(--neon-pink, #FF0070);
-  --text-color: var(--neon-piggy-pink,#F1B2CE);
-
-  --section-title-color: var(--accent-color);
+  --accent-color: #FF0070;
+  --decorative-color: #D800FF;
+  --text-color: #F1B2CE;
+  --page-bg-color: var(#000028);
+  --accented-heading-color: var(#000028);
+  --heading-color: var(--accent-color);
   
  /*Фоны*/
   --page-bg-image: url(../images/cover-image-dark.png);
+
+  /*видимость декоративного элемента*/
+  --decor-item-visibility: visible;
+
 
   /*Заголовок 1*/
   --h1-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

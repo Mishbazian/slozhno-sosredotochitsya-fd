@@ -5,8 +5,18 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+
+  /*Цвета темной темы*/
+  --accent-color: #FF0070;
+  --decorative-color: #D800FF;
+  --text-color: #F1B2CE;
+  --page-bg-color: var(#000028);
+  --accented-heading-color: var(#000028);
+  --heading-color: var(--accent-color);
+  
+ /*Фоны*/
+  --page-bg-image: url(../images/cover-image-dark.png);
+
+  /*видимость декоративного элемента*/
+  --decor-item-visibility: visible;
 }
