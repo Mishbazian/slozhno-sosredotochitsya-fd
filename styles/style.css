@@ -15,7 +15,7 @@
 
 }
 
-.page__title {
+.logo {
   font-size: var(--h1-font-size, 116px);
   line-height: var(--h1-line-height, 82.5%);
   color: var(--decorative-color, #D800FF);
@@ -29,7 +29,7 @@
   grid-template-rows: 1fr min-content 1fr;
 }
 
-.header__title {
+.header__logo {
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
 }
 
@@ -55,7 +55,9 @@
 }
 
 .header__theme-menu-button {
-  padding: 1.5px 13px;
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 0.8125rem 0.35rem;
   border: 1px solid transparent;
   line-height: 100%;
   min-height: 26px;
@@ -80,7 +82,9 @@
 }
 
 /*Секция страницы*/
-.article {
+.article,
+.article__list,
+.chapter__list {
   display: grid;
   gap: var(--spacing-md, 20px);
 }
@@ -89,20 +93,8 @@
   color: var(--heading-color, #FF0070);
 }
 
-.article__list {
-  display: grid;
-  gap: var(--spacing-md, 20px)
-}
-
-.article__chapter {
-  /* display: grid;
-  gap: var(--spacing-md, 20px); */
-}
-
-.article__chapter-list {
-  display: grid;
-  gap: var(--spacing-md, 20px);
-  padding-block: var(--spacing-md);
+.chapter__title {
+  margin-block-end: var(--spacing-md, 20px);
 }
 
 /*Карточка статьи*/
@@ -133,29 +125,8 @@
   place-items: center;
 }
 
-.footer__title {
+.footer__logo {
   text-shadow: 2px 2px 0px var(--accent-color, #FF0070);
-}
-
-
-/*Ссылка в тексте*/
-.proof-link {
-  text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
-  border-radius: 0;
-}
-
-.proof-link:hover {
-  border-bottom: 1px solid currentColor;
-}
-
-.proof-link:focus {
-  outline: none;
-}
-
-.proof-link:focus-visible {
-  outline:1px solid currentColor;
-  outline-offset: 0 3px 0 4px;
 }
 
 /*Оформление Хедера и футера*/
@@ -212,9 +183,30 @@
   box-shadow: 0px 0px 4px 2px var(--accent-color, #FF0070);
 }
 
+
+/*Ссылка в тексте*/
+.proof-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+  border-radius: 0;
+}
+
+.proof-link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.proof-link:focus {
+  outline: none;
+}
+
+.proof-link:focus-visible {
+  outline:1px solid currentColor;
+  outline-offset: 0 3px 0 4px;
+}
+
 /*миксы*/
 /*Декорирование лида и заголовков*/
-.text-decor {
+.title-decor {
   background-color: var(--accent-color, #FF0070);
   color: var(--accented-heading-color, #000028);
 }
@@ -244,6 +236,12 @@
     grid-template-columns: 1fr 2fr;
   }
 
+  /*повышаем специфичность селектора, чтобы не переопределился*/
+  .stoppers .article__list {
+    grid-row-start: 2;
+    grid-column: 1/-1;
+  }
+
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -267,16 +265,15 @@
     grid-column: 2/span 2;
     width: 100;
   }
-
-
-  .cell-expanded {
+  
+  .gallery__title {
     grid-column: 1/-1;
   }
 }
 
 @media (width >= 1024px) {
 
-  .header__theme-menu {
+   .header__theme-menu {
     justify-self: center;
     align-self: start;
   }
@@ -284,25 +281,19 @@
     flex-direction: row;
   }
 
-
   .article {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .article__list {
-    grid-column: span 2;
+    grid-column: 2/-1;
   }
 
-  .article__list_horisontal {
+  .article__list_expanded {
     grid-template-columns: repeat(3, 1fr);
-  } 
-
-  .article__chapter {
-    grid-column: span 2;
   }
 
-  .cell-expanded {
-    grid-column: 1/-1;
-  } 
-
+  .chapter {
+    grid-column: span 2;
+  }
 }

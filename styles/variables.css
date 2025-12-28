@@ -5,7 +5,7 @@
 :root {
   /*Цвета основной темы*/
   --accent-color: #FF0070;
-  --decorative-color: #D800FF;
+  --logo-color: #D800FF;
   --text-color: #F1B2CE;
   --page-bg-color: var(#000028);
   --accented-heading-color: var(#000028);
