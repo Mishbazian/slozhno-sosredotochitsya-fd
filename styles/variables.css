@@ -8,8 +8,8 @@
   --accent-color: #ff0070;
   --logo-color: #d800ff;
   --text-color: #f1b2ce;
-  --page-bg-color: var(#000028);
-  --accented-heading-color: var(#000028);
+  --page-bg-color: #000028;
+  --accented-heading-color: #000028;
   --heading-color: var(--accent-color);
   --btn-color: var(--accent-color);
 
@@ -19,9 +19,9 @@
   /*видимость декоративного элемента*/
   --decor-item-visibility: visible;
 
-  /*Заголовок 1*/
-  --h1-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --h1-line-height: 82.5%;
+  /*Лого*/
+  --logo-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --logo-line-height: 82.5%;
 
   /*Основной шрифт*/
   --text-font-size: 1.125rem;
@@ -47,6 +47,6 @@
   :root {
     --content-gap: var(--spacing-xl);
     --inner-spacing: var(--spacing-md);
-    --h1-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --logo-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

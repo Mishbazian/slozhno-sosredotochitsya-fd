@@ -7,10 +7,10 @@
 :root.theme-dark {
   /*Цвета темной темы*/
   --accent-color: #ff0070;
-  --decorative-color: #d800ff;
+  --logo-color: #d800ff;
   --text-color: #f1b2ce;
-  --page-bg-color: var(#000028);
-  --accented-heading-color: var(#000028);
+  --page-bg-color: #000028;
+  --accented-heading-color: #000028;
   --heading-color: var(--accent-color);
   --btn-color: var(--accent-color);
 

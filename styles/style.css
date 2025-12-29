@@ -15,9 +15,9 @@
 }
 
 .logo {
-  font-size: var(--h1-font-size, 116px);
-  line-height: var(--h1-line-height, 82.5%);
-  color: var(--decorative-color, #d800ff);
+  font-size: var(--logo-font-size, 116px);
+  line-height: var(--logo-line-height, 82.5%);
+  color: var(--logo-color, #d800ff);
 }
 
 /*Основные классы*/

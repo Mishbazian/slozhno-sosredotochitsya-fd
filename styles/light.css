@@ -8,7 +8,7 @@
   /*Цвета темы*/
   --page-bg-color: #fff1f7;
   --accent-color: #ff8dcb;
-  --decorative-color: #ffc2e6;
+  --logo-color: #ffc2e6;
   --text-color: #353430;
   --accented-heading-color: var(--text-color);
   --heading-color: var(--text-color);
@@ -26,7 +26,7 @@
   :root {
     --page-bg-color: #fff1f7;
     --accent-color: #ff8dcb;
-    --decorative-color: #ffc2e6;
+    --logo-color: #ffc2e6;
     --text-color: #353430;
     --accented-heading-color: var(--text-color);
     --heading-color: var(--text-color);
