@@ -5,17 +5,16 @@
 */
 
 :root.theme-light {
-  /*Цвета темы*/
-  --page-bg-color: #fff1f7;
-  --accent-color: #ff8dcb;
-  --logo-color: #ffc2e6;
-  --text-color: #353430;
-  --accented-heading-color: var(--text-color);
-  --heading-color: var(--text-color);
-  --btn-color: var(--text-color);
+  /*Цвета светлой темы*/
 
-  /*Фоны*/
+  --page-bg-color: #fff1f7;
   --page-bg-image: url(../images/cover-image-light.png);
+  --logo-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
+  --decor-zone-color: var(--text-color);
+  --decor-title-color: var(--text-color);
+  --title-color: var(--text-color);
 
   /*видимость декоративного элемента*/
   --decor-item-visibility: hidden;
@@ -24,18 +23,19 @@
 @media (prefers-color-scheme: light) {
 
   :root {
-    --page-bg-color: #fff1f7;
-    --accent-color: #ff8dcb;
-    --logo-color: #ffc2e6;
-    --text-color: #353430;
-    --accented-heading-color: var(--text-color);
-    --heading-color: var(--text-color);
-    --btn-color: var(--text-color);
+    /*Цвета светлой темы*/
 
-    /*Фоны*/
+    --page-bg-color: #fff1f7;
     --page-bg-image: url(../images/cover-image-light.png);
+    --logo-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --text-color: #353430;
+    --decor-zone-color: var(--text-color);
+    --decor-title-color: var(--text-color);
+    --title-color: var(--text-color);
 
     /*видимость декоративного элемента*/
+
     --decor-item-visibility: hidden;
   }
 }

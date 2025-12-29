@@ -6,17 +6,17 @@
 
 :root.theme-dark {
   /*Цвета темной темы*/
-  --accent-color: #ff0070;
-  --logo-color: #d800ff;
-  --text-color: #f1b2ce;
-  --page-bg-color: #000028;
-  --accented-heading-color: #000028;
-  --heading-color: var(--accent-color);
-  --btn-color: var(--accent-color);
 
-  /*Фоны*/
+  --page-bg-color: #000028;
   --page-bg-image: url(../images/cover-image-dark.png);
+  --logo-color: #d800ff;
+  --accent-color: #ff0070;
+  --decor-zone-color: var(--accent-color);
+  --text-color: #f1b2ce;
+  --decor-title-color: #000028;
+  --title-color: var(--accent-color);
 
   /*видимость декоративного элемента*/
+  
   --decor-item-visibility: visible;
 }

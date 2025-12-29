@@ -5,29 +5,32 @@
 
 :root {
   /*Цвета основной темы*/
-  --accent-color: #ff0070;
-  --logo-color: #d800ff;
-  --text-color: #f1b2ce;
-  --page-bg-color: #000028;
-  --accented-heading-color: #000028;
-  --heading-color: var(--accent-color);
-  --btn-color: var(--accent-color);
 
-  /*Фоны*/
+  --page-bg-color: #000028;
   --page-bg-image: url(../images/cover-image-dark.png);
+  --logo-color: #d800ff;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --decor-zone-color: var(--accent-color);
+  --decor-title-color: #000028;
+  --title-color: var(--accent-color);
 
   /*видимость декоративного элемента*/
+
   --decor-item-visibility: visible;
 
   /*Лого*/
+
   --logo-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --logo-line-height: 82.5%;
 
   /*Основной шрифт*/
+
   --text-font-size: 1.125rem;
   --text-line-height: 1.3;
 
   /*Отступы*/
+
   --spacing-sm: 0.625rem; /*10px*/
   --spacing-md: 1.25rem; /*20px*/
   --spacing-lg: 1.875rem; /*30px*/
