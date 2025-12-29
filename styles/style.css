@@ -7,7 +7,7 @@
   line-height: var(--text-line-height, 1.3);
   color: var(--text-color, #f1b2ce);
   background-color: var(--page-bg-color, #000028);
-  background-image: var(--page-bg-image, url(../images/cover-image-dark.png));
+  background-image: var(--page-bg-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
