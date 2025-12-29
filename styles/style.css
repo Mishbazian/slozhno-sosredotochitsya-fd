@@ -62,7 +62,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border-color: color(from currentColor display-p3 r g b/0.4);
+  border-color: var(--btn-hover-color, #FF007066);
 }
 
 .header__theme-menu-button:focus {
@@ -106,7 +106,7 @@
   font-weight: 400;
 }
 
-/* Галлерея с иллюстрациями}*/
+/* Галлерея с иллюстрациями */
 
 .gallery {
   display: grid;
@@ -212,7 +212,7 @@
 
 .title-decor {
   background-color: var(--accent-color, #ff0070);
-  color: var(--accented-heading-color, #000028);
+  color: var(--decor-title-color, #000028);
 }
 
 /*Общие внутрение отступы. изменение переменных от размера экрана*/
@@ -269,7 +269,7 @@
 
   .gallery__image_street {
     grid-column: 2 / span 2;
-    width: 100;
+    width: 100%;
   }
 
   .gallery__title {

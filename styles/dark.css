@@ -1,9 +1,3 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
   /*Цвета темной темы*/
 
@@ -11,12 +5,13 @@
   --page-bg-image: url(../images/cover-image-dark.png);
   --logo-color: #d800ff;
   --accent-color: #ff0070;
-  --decor-zone-color: var(--accent-color);
   --text-color: #f1b2ce;
+  --decor-zone-color: var(--accent-color);
   --decor-title-color: #000028;
   --title-color: var(--accent-color);
+  --btn-hover-color: #FF007066;
 
   /*видимость декоративного элемента*/
-  
+
   --decor-item-visibility: visible;
 }
